@@ -8,6 +8,9 @@ Survive life inside an airport. Work during the day, patrol at night, avoid gett
 ## Current Status
 This repository currently contains the AI-ready project harness and Unity folder skeleton. The next step is creating a Unity project in this folder, then implementing the first playable vertical slice.
 
+## Recommended Workflow
+Use Unity Editor for scenes, prefabs, inspector setup, and Play Mode checks. Use VS Code or Cursor with the Codex extension for scripts and docs. Rider is a good later option if C# refactoring becomes heavy.
+
 ## Start Here
 1. Read `AGENTS.md`.
 2. Read `docs/GAME_DESIGN.md`.

@@ -5,6 +5,7 @@ Build the smallest playable Unity version.
 
 ### Required
 - Create Unity project in this folder.
+- Configure Unity external script editor to VS Code, Cursor, or Rider.
 - Add plain C# core models for jobs, stamina, scolding, and day resolution.
 - Add edit-mode tests for core rules.
 - Keep docs synchronized when rules, Unity setup, scenes, prefabs, or task priorities change.
@@ -25,6 +26,7 @@ Build the smallest playable Unity version.
 - Add Unity project settings and confirm Unity version.
 - Add repeatable local Unity test command once project files exist.
 - Add cloud environment notes after the repo is pushed to GitHub.
+- Add screenshot/console capture habit for Unity Play Mode verification.
 - Restaurant task queue.
 - Check-in passenger validation and criminal detection.
 - Information desk destination matching.

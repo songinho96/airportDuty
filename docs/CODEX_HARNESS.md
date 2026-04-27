@@ -20,6 +20,16 @@ For this game, that means:
 - Unity scenes, prefabs, and ScriptableObjects must be documented because Codex cannot reliably infer inspector-only intent.
 - Every substantial feature should end with checks, docs sync, and a short diff review.
 
+## Unity And IDE Workflow
+Use Unity Editor and Codex together by separating responsibilities:
+
+- Unity Editor: scenes, prefabs, inspector setup, Play Mode checks, Test Runner.
+- VS Code or Cursor with the Codex IDE extension: script edits, docs, tests, and focused Codex tasks.
+- Rider: optional later for heavier Unity C# navigation and refactoring.
+- Codex App: larger feature slices, repo-wide docs sync, reviews, commits, and pushes.
+
+Do not assume Codex can inspect Unity inspector state unless that state is represented in files or docs. When a feature depends on scene or prefab setup, document the important objects and inspector values in `docs/UNITY_IMPLEMENTATION.md`.
+
 ## Prompt Shape
 Good prompts for this repo should include:
 
@@ -76,6 +86,7 @@ For core C# changes:
 For Unity scene/prefab changes:
 - Open the scene manually or through available tooling.
 - Verify the user flow, console errors, and visible HUD state.
+- Ask the user for a screenshot or console output when the required Unity Editor state cannot be inspected from files.
 - Add temporary debug logging only when it helps verify runtime behavior, then keep or remove it deliberately.
 
 For design-only changes:

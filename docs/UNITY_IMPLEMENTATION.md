@@ -6,6 +6,10 @@ Unity 2022 LTS or newer.
 ## Project Setup
 Create the Unity project in this repository root if one does not exist yet.
 
+Recommended Unity template:
+- 3D Core for the first prototype.
+- Switch to URP later only if night lighting needs more polish.
+
 Recommended packages:
 - Input System
 - Cinemachine
@@ -15,6 +19,36 @@ Recommended packages:
 Optional later:
 - URP for stronger night lighting.
 - NavMeshComponents for thief movement.
+
+## Editor Workflow
+
+Use Unity Editor for scene and asset work. Use a Codex-enabled code editor for scripts, docs, tests, commits, and reviews.
+
+Recommended setup:
+- Unity Editor: scenes, prefabs, inspector values, Play Mode checks.
+- VS Code or Cursor: C# scripts, docs, Codex IDE extension.
+- Rider: optional later if C# navigation and refactoring become heavy.
+- Codex App: larger feature work, multi-file edits, documentation sync, review, git operations.
+
+Set the external script editor:
+1. Open Unity.
+2. Go to `Unity > Settings` or `Unity > Preferences`.
+3. Open `External Tools`.
+4. Set `External Script Editor` to VS Code, Cursor, or Rider.
+5. Double-click a C# script from Unity to confirm the editor opens.
+
+There is no official Unity Editor Codex panel assumed for this project. Codex should operate through the Codex App, CLI, or IDE extension while Unity remains the runtime/editor verification tool.
+
+## First Local Setup Checklist
+
+After creating/opening the Unity project:
+- Confirm Unity version in this file.
+- Open Package Manager and install or confirm recommended packages.
+- Confirm `Assets/Scripts/Core` compiles.
+- Open Unity Test Runner and run edit-mode tests.
+- Create or confirm the first scene listed in `docs/exec-plans/vertical-slice-001.md`.
+- Commit Unity-generated project settings that should be shared.
+- Do not commit `Library/`, `Temp/`, `Obj/`, `Logs/`, or local user settings.
 
 ## Scenes
 
