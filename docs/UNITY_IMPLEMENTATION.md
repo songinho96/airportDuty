@@ -62,6 +62,8 @@ After creating/opening the Unity project:
 - Job selection UI at the start.
 - Trash spawns across public areas.
 - Main job stations are enabled based on selected job.
+- First slice can be generated from `Airport Survival > Build Vertical Slice 001 Scene`.
+- Generated slice includes placeholder player movement, trash cleanup, manager scolding, HUD, and day summary.
 
 ### `NightScene`
 - Dark airport environment.
@@ -85,6 +87,10 @@ Required components:
 - Interaction detector.
 - Stamina presenter hook.
 
+First slice scripts:
+- `SimplePlayerController`
+- `PlayerInteractor`
+
 ### Manager
 Required components:
 - Appearance controller.
@@ -96,6 +102,9 @@ Required components:
 - Pickup interaction.
 - Lifetime timer.
 - Neglect trigger.
+
+First slice script:
+- `TrashItem`
 
 ### Passenger
 Required components:
@@ -138,3 +147,13 @@ Add play-mode tests later for:
 - Manager spawn after neglected trash.
 - Thief capture.
 - Ghost contact penalty.
+
+## Vertical Slice 001 Manual Check
+After Unity project creation:
+1. Run edit-mode tests.
+2. Build the generated scene from `Airport Survival > Build Vertical Slice 001 Scene`.
+3. Press Play in `DayScene`.
+4. Move with WASD or arrow keys.
+5. Clean trash with `E`.
+6. Let at least one trash item expire and confirm manager dialogue includes the scold count.
+7. Click `End Day` and confirm the day summary appears.

@@ -6,16 +6,16 @@ Build the smallest playable Unity version.
 ### Required
 - Create Unity project in this folder.
 - Configure Unity external script editor to VS Code, Cursor, or Rider.
-- Add plain C# core models for jobs, stamina, scolding, and day resolution.
-- Add edit-mode tests for core rules.
+- Done: Add plain C# core models for jobs, stamina, scolding, and day resolution.
+- Done: Add edit-mode tests for core rules.
 - Keep docs synchronized when rules, Unity setup, scenes, prefabs, or task priorities change.
 - Keep Codex harness docs current as workflows become reliable.
-- Create a simple daytime scene.
-- Let player choose one job.
-- Spawn trash that can be cleaned.
-- Trigger manager scolding if trash is neglected.
-- Show stamina and scold count in UI.
-- End the day and show points gained.
+- In progress: Create a simple daytime scene through the Unity editor menu.
+- Pending: Let player choose one job.
+- Done: Spawn trash that can be cleaned in the generated scene.
+- Done: Trigger manager scolding if trash is neglected.
+- Done: Show stamina and scold count in UI.
+- Done: End the day and show points gained.
 
 ### Nice To Have
 - Add one restaurant minigame task.
